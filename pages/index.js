@@ -28,7 +28,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>
-          Highlight + Next.js{count}
+          Highlight + Next.js + {count}
         </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
