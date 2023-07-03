@@ -1,9 +1,12 @@
 import { withHighlight } from './common'
 
 let innerFunc = (input) => {
-  let obj = {};
+  let obj = {
+    greetings: 'hello'
+  };
   // This will throw an error
-  obj.oops.oops;
+  // obj.oops.oops;
+  return obj
 }
 
 let handler = (req, res) => {
