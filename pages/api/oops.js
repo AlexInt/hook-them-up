@@ -1,17 +1,9 @@
 import { withHighlight } from './common'
 
-let innerFunc = (input) => {
-  let obj = {
-    greetings: 'hello'
-  };
-  // This will throw an error
-  // obj.oops.oops;
-  return obj
-}
 
 let handler = (req, res) => {
-  innerFunc(1);
-  res.status(200).json({ name: 'John Doe' })
+  const feedBack = JSON.parse(req);
+  res.status(200).json(feedBack)
 }
 
 // export default handler;
